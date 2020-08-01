@@ -1,0 +1,10 @@
+
+@font-face {
+
+    font-family: "lb";
+    src: url("layarbahtera-doomsday-extended.ttf") format("truetype");
+
+    }
+.lb-font{
+    font-family: "lb";  
+    } 

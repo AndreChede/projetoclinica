@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt_BR" class="no-js">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="fontes/style.css">		
+		<link rel="stylesheet" type="text/css" href="css/principal.css">
+		<link rel="stylesheet" type="text/css" href="css/imagem.css">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Clínica Estética & Spa Fitness - Mara Chandelier</title>
+		<meta name="description" content="Inspiration for on scroll header animations with various effects" />
+		<meta name="keywords" content="on scroll, animate, header, transition, css3, 3d, effect, inspiration" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon"  href="img/1.png">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			<!-- the header that will be animated by adding the respective state class to it -->
+			<header id="ha-header" class="ha-header ha-header-large">
+				<div class="ha-header-perspective">
+					<div class="ha-header-front">
+						<h1><span>
+							<p class="ph" id="mara">MARA CHANDELIER</p>
+							<p class="lb-font" id="clin"class="ph">clínica estética <span id="s">&</span> spa fitness</p>
+							<img id="topoimg" src="img/1.png"  / >
+						</span></h1>
+						<nav>
+							<a href="#">&lsaquo; Home</a>
+							<a href="#sobre">Sobre</a>
+							<a href="loja.html">Loja</a>
+							<a href="#contato">Contato</a>
+							
+						</nav>
+					</div>
+					<div class="ha-header-bottom">
+						<nav>
+							<a href="pilates.html">Pilates</a>
+							<a href="acupuntura.html">Acupuntura</a>
+							<a href="yoga.html">Yoga</a>
+							<a href="mascara.html">Máscara de Ouro</a>
+							<a href="procedimento.html">Procedimento</a>
+							<a href="procedimento.html">Procedimento</a>
+							<a href="procedimento.html">Procedimento</a>
+							<a href="procedimento.html">Procedimento</a>
+							
+							
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- the sections with triggers -->
+				
+			<section>
+				<p ><h2>Principais Procedimentos</h2></p>
+
+
+			</section>
+			<section class="ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-hide">
+				
+				<p></p>
+			</section>
+			<section class="ha-waypoint" data-animate-down="ha-header-subshow" data-animate-up="ha-header-small">
+				<p><a class="caption" href="" data-title="Pilates"data-description="Os exercícios são focados nos músculos do centro do corpo, que ajudam a manter o equilíbrio e estabilizam a coluna vertebral. Assim, a técnica de Pilates promove a consciência da respiração e da postura. Não é à toa que o Pilates é conhecido como um método completo">
+					<img src="img/pilates.jpg" alt="Pilates"></a></p>
+
+				<p><a class="caption" href="" data-title="Acupuntura"data-description="A acupuntura ou, também, acupunctura em português europeu, é um ramo da medicina tradicional chinesa. Foi também declarado Patrimônio Cultural Intangível da Humanidade pela Unesco em 19 de novembro de 2010. O tratamento acupunterápico consiste no diagnóstico e na aplicação de agulhas em pontos definidos do corpo.">
+					<img src="img/acupuntura.jpg" alt="Acupuntura"></a></p>
+			</section>
+			<section class="ha-waypoint" data-animate-down="ha-header-shrink" data-animate-up="ha-header-subshow">
+				<p><a class="caption" href="" data-title="Yoga"data-description="O Ioga é um conceito que se refere às tradicionais disciplinas físicas originárias da Índia. A palavra está associada com as práticas meditativas costuma ser associado tipicamente com a hata-ioga e suas asanas ou como uma forma de exercício.">
+					<img src="img/yoga.jpg" alt="YOGA"></a></p>
+					
+				<p><a class="caption" href="" data-title="Máscara de Ouro	"data-description="A Máscara de Ouro preenche e redesenha o contorno facial, reestruturando a pele, melhorando a elasticidade, aumentando a oxigenação e reduzindo as rugas. ... Alia a ação de ativos que nutrem de forma intensiva e conferem extra vitalidade à pele.">
+					<img src="img/mascara.jpg" alt="mascara"></a></p>
+			</section>
+			<hr><br>
+		
+			<div id="formd">
+				<form id="formulario" action="http://localhost/projetoclinica/formulario.php" method="post">
+  					<h1>Agende sua visita:</h1>
+  					<div class="question">
+  					  <input type="text"  maxlength="50" required name="nome"/>
+  					  <label>Nome</label>
+  					</div>
+  					<div class="question">
+  					  <input type="email" required  maxlength="50" name="email"/>
+  					  <label>Email</label>
+  					</div>
+  					<div class="question">
+  					  <input type="tel" required  maxlength="13" name="telefone"/>
+  					  <label>Telefone</label>
+  					</div>
+  					
+  					<div class="question">
+  					 	<input type="date"   required name="data"/>
+
+  					 	<select  type="time"name="hora" required>
+  					 		<option >Escolha um Horário</option>
+  					 		<option>08:30</option>
+  					 		<option>09:30</option>
+  					 		<option>10:30</option>
+  					 		<option>11:30</option>
+  					 		<option>13:30</option>
+  					 		<option>14:30</option>
+  					 		<option>15:30</option>
+  					 		<option>16:30</option>
+  					 		<option>17:30</option>
+  					 		
+  					 	</select>
+
+  					</div>
+
+  					<input id="submit" type="submit" value="Agendar" name="agendar" />
+  					<div id="wppd" >Agende pelo WhatsApp:<a href="https://api.whatsapp.com/send?phone=558699028733&text=Olá, gostaria de agendar minha visita."><img id="iconwpp"src="img/wpp.png" ></img></a>
+</div>
+				</form>
+
+
+<hr id="sobre">
+<br>
+
+
+			</div>
+			<div id="sobred">
+				
+				<img  id="user"
+				src="img/user.png">
+				<h1 class="mr">
+				  Dr. Mara Chandelier
+				</h1>
+				
+				<p>
+					A história da ALIV começa inspirada nas histórias contadas por mamãe, sobre como as amigas de vovó Sinhá costumavam cuidar de suas peles. E ainda, pela grande curiosidade que o charmoso laboratório na casa do meu bisa Antônio Ferro, respeitado farmacêutico em sua época, exercia sobre mim. Nascida em uma família predominantemente feminina, os assuntos sobre os cuidados pessoais sempre foram uma constante em minha vida. Ainda muito jovem, já costumava preparar receitas cosméticas caseiras usando matérias primas encontradas no pomar da casa da bisa Aninhas, assim como: abacateiros, pitangueiras, mamoeiros, bananeiras, babosas...
+				</p>
+				<p>
+					Com o passar dos anos, acabei seguindo o mesmo caminho que a maioria de nós trilha: estudei, trabalhei, casei, me tornei mãe, e assim, sem muito tempo para fabricações caseiras, passei a usar/ experimentar muitos e muitos tipos de cosméticos, na grande maioria importados, (com grande apelo comercial) por julgar serem de melhor qualidade. Os anos foram passando, e eu fui percebendo a falta de eficácia destes produtos. Indo em busca de respostas, acabei por descobrir a enorme importância de uma boa base com um veículo condutor, que realmente levasse as substâncias importantes para o interior das camadas mais profundas da pele.
+				</p>
+				<p>
+					A história da ALIV começa inspirada nas histórias contadas por mamãe, sobre como as amigas de vovó Sinhá costumavam cuidar de suas peles. E ainda, pela grande curiosidade que o charmoso laboratório na casa do meu bisa Antônio Ferro, respeitado farmacêutico em sua época, exercia sobre mim. Nascida em uma família predominantemente feminina, os assuntos sobre os cuidados pessoais sempre foram uma constante em minha vida. Ainda muito jovem, já costumava preparar receitas cosméticas caseiras usando matérias primas encontradas no pomar da casa da bisa Aninhas, assim como: abacateiros, pitangueiras, mamoeiros, bananeiras, babosas...
+				</p>
+				<p>
+					Com o passar dos anos, acabei seguindo o mesmo caminho que a maioria de nós trilha: estudei, trabalhei, casei, me tornei mãe, e assim, sem muito tempo para fabricações caseiras, passei a usar/ experimentar muitos e muitos tipos de cosméticos, na grande maioria importados, (com grande apelo comercial) por julgar serem de melhor qualidade. Os anos foram passando, e eu fui percebendo a falta de eficácia destes produtos. Indo em busca de respostas, acabei por descobrir a enorme importância de uma boa base com um veículo condutor, que realmente levasse as substâncias importantes para o interior das camadas mais profundas da pele.
+				</p>
+				
+
+
+			</div>
+
+
+				
+			
+			
+		</div><!-- /container -->
+		<footer id="contato">
+			<div id="logo" class="separalogo" >
+				<img id="logoimg" src="img/1.png" alt="Clínica Estética & Spa Fitness - Mara CHANDELIER"  / >
+
+			</div>
+			<div id="cted" class="separalogo" >
+				<p>Tel: </p>
+				<p>Email:</p>
+				<P>Endereço:</P>
+				<a href="https://icons8.com/icon/32292/instagram">Instagram icon by Icons8/</a>
+				<a href="https://icons8.com/icon/435/facebook">Facebook icon by Icons8</a>
+			</div>
+			<div id="redes"  class="separalogo">
+				<img id="ic" src="https://img.icons8.com/ios/50/000000/instagram-new.png" >
+				<img  id="ic" src="https://img.icons8.com/ios/50/000000/facebook.png">
+				<img id="eu" class="logoimg" src="img/acpretot.png" alt="Produzido por André Chede" / >
+		</footer>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script>
+			var $head = $( '#ha-header' );
+			$( '.ha-waypoint' ).each( function(i) {
+				var $el = $( this ),
+					animClassDown = $el.data( 'animateDown' ),
+					animClassUp = $el.data( 'animateUp' );
+
+				$el.waypoint( function( direction ) {
+					if( direction === 'down' && animClassDown ) {
+						$head.attr('class', 'ha-header ' + animClassDown);
+					}
+					else if( direction === 'up' && animClassUp ){
+						$head.attr('class', 'ha-header ' + animClassUp);
+					}
+				}, { offset: '100%' } );
+			} );
+		</script>
+		
+
+	</body>
+</html>

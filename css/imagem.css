@@ -1,0 +1,34 @@
+.caption {
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+}
+
+.caption img {
+	display: block;
+	max-width:350px;
+}
+.caption::before,
+.caption::after {
+	position:absolute;
+	left: 100%;
+	width: 350px;
+	margin: 0 0 0 10%;
+	font-weight: 300;
+	color:black;
+}
+.caption::before {
+	content: attr(data-title);
+	top: 0;
+	height: 25%;
+	padding: 5px 30px 15px 10px;
+	font-size: 40px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.caption::after {
+	content: attr(data-description);
+	top: 25%;
+	padding: 20px 10px 0;
+	font-size: 18px;
+}
+
